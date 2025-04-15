@@ -3,11 +3,11 @@ import time
 
 # URL to request
 urls = [
-        'https://www.priem.be',
+        # 'https://www.priem.be',
         'https://aquilae.be',
         'https://www.declercq-verstichel.be',
         'https://www.hillewaere-verzekeringen.be/',
-        'https://www.deridderkris.be',
+        # 'https://www.deridderkris.be',
         'https://www.invicta-art.com',
         'https://www.invicta-insurance.be/'
         ]  # Replace with your target URL
@@ -34,7 +34,7 @@ def send_requests_for_duration(duration):
 for url in urls:
     print(f"url: {url}")
     # Run the request sending function for 5 minutes
-    duration_in_seconds = 5 * 60  # 5 minutes
+    duration_in_seconds = 10 * 60  # 5 minutes
     valid_count, invalid_count = send_requests_for_duration(duration_in_seconds)
     print(f"Total valid responses (status 200): {valid_count}")
     print(f"Total invalid responses (status other than 200): {invalid_count}")
